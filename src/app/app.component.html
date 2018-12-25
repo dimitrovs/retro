@@ -1,0 +1,4 @@
+<div cdkDropListGroup>
+	<app-item-list [items]="todo" title="To do" (drop)="onDrop($event)"></app-item-list>
+	<app-item-list [items]="done" title="Done" (drop)="onDrop($event)"></app-item-list>
+</div>

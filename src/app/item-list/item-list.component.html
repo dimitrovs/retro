@@ -1,0 +1,8 @@
+<div class="list-container">
+		<app-inline-edit [value]="title"></app-inline-edit>
+<div cdkDropList [cdkDropListData]="items" class="item-list" (cdkDropListDropped)="onDrop($event)">
+			<div class="item-box" *ngFor="let item of items" cdkDrag>
+<app-inline-edit [value]="item"></app-inline-edit>
+      </div>
+		</div>
+	</div>

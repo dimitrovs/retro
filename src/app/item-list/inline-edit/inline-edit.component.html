@@ -1,0 +1,4 @@
+	<p *ngIf="!editMode" (click)="toggle(true)">{{value}}</p>
+	<mat-form-field *ngIf="editMode">
+		<input matInput #valueInput name="input" [(ngModel)]="value" (blur)="toggle(false)">
+  </mat-form-field>
